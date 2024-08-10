@@ -30,43 +30,53 @@ touch main.cpp
 code main.cpp
 ```
 
-5. Fill out the `main.cpp` with content to run the program.
+5. Fill out the `main.cpp` code file with content to run the program.
+
 Refer to the comments in the [example `main.cpp`](./src/main.cpp) to understand what it is doing.
 
-6. Create a subdirectory in the source code file to hold custom math functions and navigate to it. Then create a code file `mathfunctions.cpp` to hold logic for custom math functions.
+6. Create a subdirectory in the source code directory to hold custom math functions and navigate to it.
+
+Then create a code file `mysqrt.cpp` to hold logic for a custom square root function.
 
 ```
-mkdir mathfunctions
-cd mathfunctions
-code mathfunctions.cpp
+mkdir math_functions
+cd math_functions
+code mysqrt.cpp
 ```
 
-7. Fill out the `mathfunctions.cpp` with content to calculate a square root.
-Refer to the comments in the [example `mathfunctions.cpp`](./src/mathfunctions/mathfunctions.cpp) to understand what it is doing.
+7. Fill out the `mysqrt.cpp` code file with content to calculate a square root.
 
-8. Return to the root directory of this stage (Stage 0) and create an include directory `include`, then navigate to it. Then create a header file `mathfunctions.h` to declare custom math functions that were implemented in `mathfunctions.cpp`.
+Refer to the comments in the [example `mysqrt.cpp`](./src/math_functions/mysqrt.cpp) to understand what it is doing.
+
+8. Return to the root directory of this stage (Stage 0) and create an include directory `include`, then navigate to it.
+
+Then create a subdirectory in the include directory to match the structure of the source code directory and navigate to it.
+
+Then create a header file `mysqrt.h` to declare custom math functions that were implemented in `mysqrt.cpp`.
 
 ```
 cd ../..
 mkdir include
 cd include
-code mathfunctions.h
+code mysqrt.h
 ```
 
-9. Fill out the `mathfunctions.h` with content to declare the functions implemented in `mathfunctions.cpp`
-Refer to the comments in the [example `mathfunctions.h`](./include/mathfunctions.h) to understand what it is doing.
+9. Fill out the `mysqrt.h` header file with content to declare the functions implemented in `mysqrt.cpp`
 
-## Final Result
+Refer to the comments in the [example `mysqrt.h`](./include/math_functions/mysqrt.h) to understand what it is doing.
 
-This is what the final project structure looks like:
+## Project Structure
+
+This is what the project structure looks like for Stage 0:
 
 ```
 Stage0/
   ├── README.md
   ├── src/
   │    ├── main.cpp
-  │    └── mathfunctions/
-  │         └── mathfunctions.cpp
-  ├── include/
-  │    └── mathfunctions.h
+  │    └── math_functions/
+  │         └── mysqrt.cpp
+  └── include/
+       └── math_functions/
+            └── mysqrt.h
 ```

@@ -4,7 +4,7 @@
 #include <iostream>
 
 // include the header file for this project's custom math functions
-#include "mathfunctions.h"
+#include "math_functions/mysqrt.h"
 
 int main(int argc, char* argv[])
 {
@@ -21,8 +21,8 @@ int main(int argc, char* argv[])
   // convert input to double
   const double inputValue = std::stod(argv[1]);
 
-  // call our custom square root function from the mathfunctions namespace
-  const double outputValue = mathfunctions::mysqrt(inputValue);
+  // call our custom square root function from the math_functions namespace
+  const double outputValue = math_functions::mysqrt(inputValue);
 
   // print the result as output
   std::cout << "The square root of " << inputValue << " is " << outputValue << std::endl;
