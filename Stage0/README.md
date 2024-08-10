@@ -1,6 +1,8 @@
 # Stage 0 - Preparing the Project
 
-This stage involves creating a minimal project. To understand what is being done here, see the [main README Stage 0 explanation](../README.md#stage-0---preparing-the-project).
+This stage involves creating a minimal project, which will then be built in later stages.
+
+To understand what is being done here, see the [main README Stage 0 explanation](../README.md#stage-0---preparing-the-project).
 
 Normally these files would be placed in the root directory (the CMakeGuide folder) but for simplicity these are separated out into their own directory for each stage.
 
