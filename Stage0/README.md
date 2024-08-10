@@ -1,6 +1,6 @@
 # Stage 0 - Preparing the Project
 
-This stage involves creating a minimal project. To understand what is being done here, see the [main README](../README.md).
+This stage involves creating a minimal project. To understand what is being done here, see the [main README Stage 0 explanation](../README.md#stage-0---preparing-the-project).
 
 Normally these files would be placed in the root directory (the CMakeGuide folder) but for simplicity these are separated out into their own directory for each stage.
 
@@ -21,7 +21,7 @@ cd src
 3. Create the main source code file `main.cpp`.
 
 ```
-code main.cpp
+touch main.cpp
 ```
 
 4. Open the main file with any text editor. This example uses Visual Studio Code.
@@ -55,3 +55,18 @@ code mathfunctions.h
 
 9. Fill out the `mathfunctions.h` with content to declare the functions implemented in `mathfunctions.cpp`
 Refer to the comments in the [example `mathfunctions.h`](./include/mathfunctions.h) to understand what it is doing.
+
+## Final Result
+
+This is what the final project structure looks like:
+
+```
+Stage0/
+  ├── README.md
+  ├── src/
+  │    ├── main.cpp
+  │    └── mathfunctions/
+  │         └── mathfunctions.cpp
+  ├── include/
+  │    └── mathfunctions.h
+```
