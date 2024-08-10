@@ -12,6 +12,10 @@ This README covers the concepts being used. For instructions on how to actually 
 
 This section describes project structure. To immediately start building the project, skip to [the Stage 0 README](./Stage0/README.md).
 
+```
+cd Stage0
+```
+
 A typical C++ project is structured to separate source files, header files, build files, and other resources.
 
 Here is a theoretical project structure:
