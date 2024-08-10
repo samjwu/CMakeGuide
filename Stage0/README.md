@@ -21,4 +21,18 @@ code main.cpp
 ```
 
 3. Fill out the `main.cpp` with content to run the program.
-Refer to the comments in [example `main.cpp`](./src/main.cpp) to understand what it is doing.
+Refer to the comments in the [example `main.cpp`](./src/main.cpp) to understand what it is doing.
+
+4. Create a subdirectory in the source code file to hold custom math functions and navigate to it.
+
+```
+mkdir mathfunctions
+cd mathfunctions
+```
+
+5. Fill out the `mathfunctions.cpp` with content to calculate a square root.
+Refer to the comments in the [example `mathfunctions.cpp`](./src/mathfunctions/mathfunctions.cpp) to understand what it is doing.
+
+```
+code mathfunctions.cpp
+```
