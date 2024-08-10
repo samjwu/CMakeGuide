@@ -82,3 +82,15 @@ Stage0/
        └── math_functions/
             └── mysqrt.h
 ```
+### Explanation
+
+Here is an explanation of the project structure:
+
+`README.md`: This file. Provides information on Stage 0.
+`src`: The source directory. Contains source code for the project to function.
+`src/main.cpp`: The main code file. Runs the project.
+`src/math_functions`: A subdirectory in the source code directory. Used to group similar functionality. In this example, there is only one code file in it but more can be added (for example: `myexponent.cpp`, `mylogarithm.cpp`).
+`src/math_functions/mysqrt.cpp`: A code file. Implements custom logic to calculate a square root. This one uses [Newton's method](https://en.wikipedia.org/wiki/Newton's_method) but the details are not important.
+`include`: The include directory. Contains the header file where the custom square root function is declared.
+`include/math_functions`: A subdirectory in the include code directory. Used to group similar functionality. In this example, there is only one header file in it but more can be added (for example: `myexponent.h`, `mylogarithm.h`).
+`include/math_functions/mysqrt.h`: A header file. Declares the custom square root function.
