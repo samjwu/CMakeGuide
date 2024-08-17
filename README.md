@@ -10,7 +10,7 @@ This README covers the concepts being used. For instructions on how to actually 
 
 ### Stage 0 - Preparing the Project
 
-This section describes project structure. To immediately start building the project, skip to [the Stage 0 README](./Stage0/README.md).
+This section describes project structure. To immediately start setting up the project, skip to [the Stage 0 README](./Stage0/README.md).
 
 ```
 cd Stage0
@@ -64,3 +64,12 @@ Here is a quick explanation of each file and directory:
 - `docs`: The documentation directory contains documentation files (for example: `.md`, `.rst`, `.txt`) with information on the project.
 - `scripts`: The scripts directory contains script files (for example: `.sh`, `.py`) to automate tasks.
 - `res`: The resources directory contains non-code resource files (for example: `.png`, `.csv`, `.mp3`) used by the project.
+
+### Stage 1 - Build the Project Manually
+
+This section describes building the project manually. To immediately start building the project, skip to [the Stage 1 README](./Stage1/README.md).
+
+```
+cd Stage1
+```
+
