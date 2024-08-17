@@ -28,10 +28,6 @@ The `-I` option tells `g++` the directory where the header files are located (th
 
 The `mysqrt.o` file is an object file that is generated from the `mysqrt.cpp` source file.
 
-Object files are intermediate files containing compiled machine code made by the compiler during the build process.
-
-Object files need to be linked to create an executable.
-
 2. Compile `main.cpp`, the main source code, into an object file `main.o`.
 
 ```
