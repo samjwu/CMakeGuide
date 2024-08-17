@@ -73,3 +73,19 @@ This section describes building the project manually. To immediately start build
 cd Stage1
 ```
 
+This section involves manually compiling the source code into object files and then linking those object files into an executable.
+
+As mentioned in Stage 0, source code is a file that contains the commands written in some higher level programming language that the project uses to function.
+
+Compilation is the process of converting source code into intermediate code or machine code known as an object file.
+
+Object files are intermediate files containing compiled machine code made by the compiler during the build process.
+
+Object files need to be linked to create an executable.
+
+The full process involved in compilation includes preprocessing, compilation, assembly, and linking:
+
+- Preprocessing: Handling of directives (special instructions for the compiler's preprocessor) and macros (code snippets or constants reused in the source code) and inclusion of header files into source code.
+- Compilation: Converts preprocessed source code into assembly language.
+- Assembly: Converts assembly language into machine code that results in an object file.
+- Linking: Combines object files into an executable.
