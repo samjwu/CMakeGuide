@@ -11,3 +11,21 @@ To understand what is being done here, see the [main README Stage 2 explanation]
 This stage continues to use the [MinGW](https://sourceforge.net/projects/mingw/) toolchain to build the project on a Windows platform from Stage 1.
 
 Use the [GCC](https://gcc.gnu.org/) toolchain on a Linux platform or the [Clang](https://clang.llvm.org/) toolchain for cross-platform capability.
+
+## Steps
+
+1. Create a `Makefile` in the root of the project.
+
+```
+code Makefile
+```
+
+2. Fill out the `Makefile` code file with variables, targets, dependencies, and rules.
+
+Refer to the comments in the [`Makefile`](./Makefile) to understand what it is doing.
+
+3. Execute the `make` command to have the make build system build the project using the Makefile.
+
+```
+mingw32-make
+```
