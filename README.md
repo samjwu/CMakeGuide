@@ -23,7 +23,7 @@ Here is a theoretical project structure:
 ```
 ExampleCppProject/
   ├── README.md
-  ├── CMakeLists.txt # or Makefile
+  ├── CMakeLists.txt # or `Makefile`
   ├── src/
   │    ├── main.cpp
   │    ├── app.cpp
@@ -92,21 +92,21 @@ The full process involved in compilation includes preprocessing, compilation, as
 
 ### Stage 2 - Build the Project with make
 
-This section describes building the project with make. To immediately start, skip to [the Stage 2 README](./Stage2/README.md).
+This section describes building the project with `make`. To immediately start, skip to [the Stage 2 README](./Stage2/README.md).
 
 ```
 cd Stage2
 ```
 
-This section involves creating a Makefile, a special configuration file that defines directives or instructions for the make build system or toolset.
+This section involves creating a `Makefile`, a special configuration file that defines directives or instructions for the `make` build system or toolset.
 
-The make toolset is a build automation system usually used for compiling and linking programs from source code. It can also be used to automate tasks that have dependencies and require a set of actions to be taken. Some examples include building documentation, packaging an application into other formats for distribution and installation (for example: `.zip`, `.tar.gz`, `.deb`, `.rpm`), and running tests.
+The `make` toolset is a build automation system usually used for compiling and linking programs from source code. It can also be used to automate tasks that have dependencies and require a set of actions to be taken. Some examples include building documentation, packaging an application into other formats for distribution and installation (for example: `.zip`, `.tar.gz`, `.deb`, `.rpm`), and running tests.
 
-The Makefile will define how the compilation and linking steps will be handled. After it is created, users will be able to build the project by running the `make` command, which automatically uses the Makefile as an input to manage the build process.
+The `Makefile` will define how the compilation and linking steps will be handled. After it is created, users will be able to build the project by running the `make` command, which automatically uses the `Makefile` as an input to manage the build process.
 
-Key components of the Makefile include variables, targets, dependencies, and rules:
+Key components of the `Makefile` include variables, targets, dependencies, and rules:
 
-- Variables: A value that can be reused in the Makefile (for example: file lists).
-- Targets: Files that the make build system will create or update (for example: an executable).
+- Variables: A value that can be reused in the `Makefile` (for example: file lists).
+- Targets: Files that the `make` build system will create or update (for example: an executable).
 - Dependencies: Files or components that need to be included to build the target (for example: a header file).
 - Rules: The set of actions or commands that must be taken to build the target from its dependencies.

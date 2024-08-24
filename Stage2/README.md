@@ -1,6 +1,6 @@
 # Stage 2 - Build the Project with make
 
-This stage involves the steps to create a Makefile for the make build system to use and then executing the make command.
+This stage involves the steps to create a `Makefile` for the `make` build system to use and then executing the `make` command.
 
 This automates the manual build commands from [Stage 1](../Stage1/README.md).
 
@@ -24,7 +24,7 @@ code Makefile
 
 Refer to the comments in the [`Makefile`](./Makefile) to understand what it is doing.
 
-3. Execute the `make` command to have the make build system build the project using the Makefile.
+3. Execute the `make` command to have the `make` build system build the project using the `Makefile`.
 
 ```
 mingw32-make
