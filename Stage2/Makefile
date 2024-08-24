@@ -25,8 +25,16 @@ $(TARGET): $(OBJS)
 # uses the $< and $@ automatic variables to refer to the dependent and target of the rule
 # $< is the dependency of the rule (the .cpp source file)
 # $@ is the target of the rule (the .o object file)
-%.o: %.cpp
-	$(CXX) $(CXXFLAGS) -c $< -o $@
+# %.o: %.cpp
+# 	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+# Rule: explicitly compile source code into object files
+# this rule is equivalent to the rule above
+src/main.o: src/main.cpp
+	$(CXX) $(CXXFLAGS) -c src/main.cpp -o src/main.o
+
+src/math_functions/mysqrt.o: src/math_functions/mysqrt.cpp
+	$(CXX) $(CXXFLAGS) -c src/math_functions/mysqrt.cpp -o src/math_functions/mysqrt.o
 
 # Rule: clean up by removing the object files and executable
 clean:
