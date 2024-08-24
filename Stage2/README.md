@@ -29,3 +29,9 @@ Refer to the comments in the [`Makefile`](./Makefile) to understand what it is d
 ```
 mingw32-make
 ```
+
+Note that due to how the `Makefile` is configured, the command below is equivalent:
+
+```
+mingw32-make all
+```
