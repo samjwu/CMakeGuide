@@ -1,4 +1,4 @@
-# Stage 2 - Build the Project with make
+# Stage 3 - Build the Project with CMake
 
 This stage involves the steps to create a `CMakeLists.txt` file for the CMake build system generator and using the `cmake` command to build the project.
 

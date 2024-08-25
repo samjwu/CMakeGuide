@@ -1,4 +1,4 @@
-# Stage 2 - Build the Project with make
+# Stage 2 - Build the Project with Make
 
 This stage involves the steps to create a `Makefile` for the Make build system to use and then executing the `make` command.
 
