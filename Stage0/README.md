@@ -6,6 +6,10 @@ To understand what is being done here, see the [main README Stage 0 explanation]
 
 Normally these files would be placed in the root directory (the CMakeGuide folder) but for simplicity these are separated out into their own directory for each stage.
 
+## Prerequisites
+
+This stage uses [Visual Studio Code](https://code.visualstudio.com/) as a text editor, though any text editor can be used, such as Notepad, Notepad++, Vim, Emacs, Atom, etc.
+
 ## Steps
 
 1. Create the source directory `src`.
@@ -26,7 +30,7 @@ cd src
 touch main.cpp
 ```
 
-4. Open the main file with any text editor. This example uses Visual Studio Code.
+4. Open the main file with any text editor. This example uses [Visual Studio Code](https://code.visualstudio.com/).
 
 ```
 code main.cpp

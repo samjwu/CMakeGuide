@@ -8,6 +8,8 @@ To understand what is being done here, see the [main README Stage 1 explanation]
 
 ## Prerequisites
 
+This stage continues to use [Visual Studio Code](https://code.visualstudio.com/) from Stage 0 as a text editor, though any text editor can be used, such as Notepad, Notepad++, Vim, Emacs, Atom, etc.
+
 This stage uses the [MinGW](https://sourceforge.net/projects/mingw/) toolchain to build the project on a Windows platform.
 
 Use the [GCC](https://gcc.gnu.org/) toolchain on a Linux platform or the [Clang](https://clang.llvm.org/) toolchain for cross-platform capability.
