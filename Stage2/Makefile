@@ -3,15 +3,16 @@ CXX = g++
 CXXFLAGS = -Iinclude
 
 # Target: define the name of the output executable
-TARGET = stage2
+TARGET = build/stage2
 
 # Variable: list the source files to compile
 SRCS = src/main.cpp src/math_functions/mysqrt.cpp
 
 # Variable: define the object files
+# creates a corresponding .o object file each .cpp source file
 # use $() syntax for pattern substitution to use existing source file variable
-# create a corresponding .o object file each .cpp source file
-OBJS = $(SRCS:.cpp=.o)
+# uses the % wildcard in a pattern rule to match all .o and .cpp files
+OBJS = $(SRCS:src/%.cpp=build/%.o)
 
 # Rule: default actions to run when executing make without any arguments
 all: $(TARGET)
@@ -25,7 +26,8 @@ $(TARGET): $(OBJS)
 # uses the $< and $@ automatic variables to refer to the dependent and target of the rule
 # $< is the dependency of the rule (the .cpp source file)
 # $@ is the target of the rule (the .o object file)
-%.o: %.cpp
+build/%.o: src/%.cpp
+	@mkdir -p $(dir $@)
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 # Rule: explicitly compile source code into object files
@@ -38,7 +40,7 @@ $(TARGET): $(OBJS)
 
 # Rule: clean up by removing the object files and executable
 clean:
-	rm -f $(TARGET) $(OBJS)
+	rm -rf build
 
 # Target: declare phony targets
 # indicates that all and clean are targets and not files
