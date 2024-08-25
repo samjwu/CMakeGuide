@@ -31,3 +31,9 @@ Refer to the comments in the [`CMakeLists.txt`](./CMakeLists.txt) to understand 
 ```
 cmake .
 ```
+
+4. As was done in Stage 2, execute the `make` command to have the Make build system build the project using the `Makefile`.
+
+```
+mingw32-make
+```
