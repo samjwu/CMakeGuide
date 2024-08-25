@@ -10,7 +10,7 @@ This README covers the concepts being used. For instructions on how to actually 
 
 ### Stage 0 - Preparing the Project
 
-This section describes project structure. To immediately start setting up the project, skip to [the Stage 0 README](./Stage0/README.md).
+This section describes project structure. To skip the explanation and immediately start setting up the project, skip to [the Stage 0 README](./Stage0/README.md).
 
 ```
 cd Stage0
@@ -67,7 +67,7 @@ Here is a quick explanation of each file and directory:
 
 ### Stage 1 - Build the Project Manually
 
-This section describes building the project manually. To immediately start building the project, skip to [the Stage 1 README](./Stage1/README.md).
+This section describes building the project manually. To skip the explanation and immediately start building the project, skip to [the Stage 1 README](./Stage1/README.md).
 
 ```
 cd Stage1
@@ -92,7 +92,7 @@ The full process involved in compilation includes preprocessing, compilation, as
 
 ### Stage 2 - Build the Project with Make
 
-This section describes building the project with Make. To immediately start, skip to [the Stage 2 README](./Stage2/README.md).
+This section describes building the project with Make. To skip the explanation and immediately start building with Make, skip to [the Stage 2 README](./Stage2/README.md).
 
 ```
 cd Stage2
@@ -110,3 +110,11 @@ Key components of the `Makefile` include variables, targets, dependencies, and r
 - Targets: Files that the Make build system will create or update (for example: an executable).
 - Dependencies: Files or components that need to be included to build the target (for example: a header file).
 - Rules: The set of actions or commands that must be taken to build the target from its dependencies.
+
+### Stage 3 - Build the Project with CMake
+
+This section describes building the project with CMake. To skip the explanation and immediately start building with CMake, skip to [the Stage 3 README](./Stage3/README.md).
+
+```
+cd Stage3
+```
