@@ -17,7 +17,3 @@ set(SRCS src/main.cpp src/math_functions/mysqrt.cpp)
 
 # create the executable from the source files
 add_executable(${PROJECT_NAME} ${SRCS})
-
-# add a target to clean the directory
-# include the executable when cleaning the directory
-set_directory_properties(PROPERTIES ADDITIONAL_MAKE_CLEAN_FILES "${PROJECT_BINARY_DIR}/${PROJECT_NAME}")

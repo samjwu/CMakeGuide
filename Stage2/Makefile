@@ -38,7 +38,7 @@ build/%.o: src/%.cpp
 # src/math_functions/mysqrt.o: src/math_functions/mysqrt.cpp
 # 	$(CXX) $(CXXFLAGS) -c src/math_functions/mysqrt.cpp -o src/math_functions/mysqrt.o
 
-# Rule: clean up by removing the object files and executable
+# Rule: clean up by deleting the build directory
 clean:
 	rm -rf build
 
