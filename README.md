@@ -125,7 +125,7 @@ CMake is a cross-platform build system generator used to manage and automate the
 
 Combining the steps from the previous stages, here is an outline of the full build process with all automations:
 
-- The configuration file `CMakeLists.txt` is written
-- The build system generator CMake reads the configuration file (`CMakeLists.txt`) to automate generating build files (`Makefile` in this example)
-- The build system (Make in this example) uses the build system file (`Makefile` in this example) to automate compiling and linking source code
-- The build tool (MinGW in this example) compiles and links the source code
+- The configuration file `CMakeLists.txt` is written.
+- The build system generator CMake reads the configuration file (`CMakeLists.txt`) to automate generating build files (`Makefile` in this example).
+- The build system (Make in this example) uses the build system file (`Makefile` in this example) to automate commands needed to run the build tool.
+- The build tool (MinGW in this example) compiles and links the source code.
