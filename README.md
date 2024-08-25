@@ -118,3 +118,14 @@ This section describes building the project with CMake. To skip the explanation 
 ```
 cd Stage3
 ```
+
+This section involves creating a `CMakeLists.txt`, a special configuration file that provides settings for the CMake build system generator to generate a `Makefile`.
+
+CMake is a cross-platform build system generator used to manage and automate the build process of software projects.
+
+Combining the steps from the previous stages, here is an outline of the full build process with all automations:
+
+- The configuration file `CMakeLists.txt` is written
+- The build system generator CMake reads the configuration file (`CMakeLists.txt`) to automate generating build files (`Makefile` in this example)
+- The build system (Make in this example) uses the build system file (`Makefile` in this example) to automate compiling and linking source code
+- The build tool (MinGW in this example) compiles and links the source code
