@@ -16,10 +16,19 @@ Use the [GCC](https://gcc.gnu.org/) toolchain on a Linux platform or the [Clang]
 
 ## Steps
 
-1. Compile `mysqrt.cpp`, the custom library source code with logic for calculating a square root, into an object file `mysqrt.o`.
+1. Create a `build` directory in which to build the project and navigate to the `build` directory.
 
 ```
-g++ -c src/math_functions/mysqrt.cpp -Iinclude
+mkdir build
+cd build
+```
+
+The `build` directory is good practice for keeping outputs of the build process separate from the source files. Keeping these separate has several benefits, including easier cleanup, allowing for multiple build configurations, and a consistent standard for different build environments.
+
+2. Compile `mysqrt.cpp`, the custom library source code with logic for calculating a square root, into an object file `mysqrt.o`.
+
+```
+g++ -c ../src/math_functions/mysqrt.cpp -I../include -o mysqrt.o
 ```
 
 The `g++` command uses the GNU C++ Compiler to compile the source code.
@@ -30,13 +39,13 @@ The `-I` option tells `g++` the directory where the header files are located (th
 
 The `mysqrt.o` file is an object file that is generated from the `mysqrt.cpp` source file.
 
-2. Compile `main.cpp`, the main source code, into an object file `main.o`.
+3. Compile `main.cpp`, the main source code, into an object file `main.o`.
 
 ```
-g++ -c src/main.cpp -Iinclude
+g++ -c ../src/main.cpp -I../include -o main.o
 ```
 
-3. Link both the resulting object files `mysqrt.o` and `main.o`.
+4. Link both the resulting object files `mysqrt.o` and `main.o`.
 
 ```
 g++ -o stage1 mysqrt.o main.o
@@ -49,5 +58,5 @@ Normally using `g++` without specifying the `-c` option will do linking automati
 The compile and link steps can be done in one command:
 
 ```
-g++ src/main.cpp src/math_functions/mysqrt.cpp -Iinclude -o stage1
+g++ ../src/main.cpp ../src/math_functions/mysqrt.cpp -I../include -o stage1
 ```
