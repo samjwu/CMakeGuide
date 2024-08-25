@@ -26,13 +26,20 @@ code CMakeLists.txt
 
 Refer to the comments in the [`CMakeLists.txt`](./CMakeLists.txt) to understand what it is doing.
 
-3. Execute the `cmake` command to have the CMake build system generator generate a `Makefile`.
+3. Create a `build` directory in which to build the project and navigate to the `build` directory.
 
 ```
-cmake .
+mkdir build
+cd build
 ```
 
-4. As was done in Stage 2, execute the `make` command to have the Make build system build the project using the `Makefile`.
+4. Execute the `cmake` command to have the CMake build system generator generate a `Makefile`.
+
+```
+cmake .. -G "MinGW Makefiles"
+```
+
+5. As was done in Stage 2, execute the `make` command to have the Make build system build the project using the `Makefile`.
 
 ```
 mingw32-make
