@@ -22,7 +22,7 @@ Use the [GCC](https://gcc.gnu.org/) toolchain on a Linux platform or the [Clang]
 code Makefile
 ```
 
-2. Fill out the `Makefile` code file with variables, targets, dependencies, and rules.
+2. Fill out the `Makefile` file with variables, targets, dependencies, and rules.
 
 Refer to the comments in the [`Makefile`](./Makefile) to understand what it is doing.
 

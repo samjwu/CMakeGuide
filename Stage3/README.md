@@ -22,18 +22,12 @@ Use the [GCC](https://gcc.gnu.org/) toolchain on a Linux platform or the [Clang]
 code CMakeLists.txt
 ```
 
-2. Fill out the `Makefile` code file with variables, targets, dependencies, and rules.
+2. Fill out the `CMakeLists.txt` file with variables, targets, dependencies, and rules.
 
-Refer to the comments in the [`Makefile`](./Makefile) to understand what it is doing.
+Refer to the comments in the [`CMakeLists.txt`](./CMakeLists.txt) to understand what it is doing.
 
-3. Execute the `make` command to have the Make build system build the project using the `Makefile`.
-
-```
-mingw32-make
-```
-
-Note that due to how the `Makefile` is configured, this command is equivalent to the one above:
+3. Execute the `cmake` command to have the CMake build system generator generate a `Makefile`.
 
 ```
-mingw32-make all
+cmake .
 ```
