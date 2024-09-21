@@ -5,8 +5,8 @@ cmake_minimum_required(VERSION 3.10)
 project(stage4)
 
 # set the C++ standard
-# this will require the compiler to support C++ version 11 or later
-set(CMAKE_CXX_STANDARD 11)
+# this will require the compiler to support C++ version 14 or later
+set(CMAKE_CXX_STANDARD 14)
 
 # add directories to search path for header files
 # this adds the `include` folder to the search path
@@ -48,7 +48,7 @@ include_directories(${CMAKE_BINARY_DIR}/lib/installed/${CMAKE_INSTALL_INCLUDEDIR
 find_package(Threads REQUIRED)
 
 # create a test executable
-add_executable(mysqrt_test tests/test_mysqrt.cpp)
+add_executable(mysqrt_test tests/test_mysqrt.cpp src/math_functions/mysqrt.cpp)
 
 # link Threads and GoogleTest
 target_link_libraries(mysqrt_test gtest Threads::Threads)
