@@ -132,12 +132,14 @@ Combining the steps from the previous stages, here is an outline of the full bui
 
 ### Stage 4 - Add Tests with GoogleTest
 
-This section describes adding tests to the project with GoogleTest. To skip the explanation and immediately start adding tests, skip to [the Stage 4 README](./Stage4/README.md).
+This section describes adding tests to the project with [GoogleTest](https://github.com/google/googletest). To skip the explanation and immediately start adding tests, skip to [the Stage 4 README](./Stage4/README.md).
 
 ```
 cd Stage4
 ```
 
-This section involves integrating [GoogleTest](https://github.com/google/googletest) into the project for adding unit tests.
+This section involves integrating a third-party library, [GoogleTest](https://github.com/google/googletest), into the project using CMake.
 
-GoogleTest is Google's C++ mocking and testing framework.
+The GoogleTest library will be integrated into the project via the `CMakeLists.txt` file, instructing the CMake build system generator to fetch and configure the library from its repository at [https://github.com/google/googletest](https://github.com/google/googletest).
+
+GoogleTest is Google's C++ mocking and testing framework. Mocking provides objects to simulate the behavior of real objects without needing to rely on actual dependencies, to allow focus on testing. The testing framework provides tools to write unit tests, designed to validate that code works as expected.
