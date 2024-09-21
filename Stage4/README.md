@@ -11,3 +11,6 @@ This stage continues to use [Visual Studio Code](https://code.visualstudio.com/)
 This stage continues to use the [MinGW](https://sourceforge.net/projects/mingw/) toolchain to build the project on a Windows platform from Stage 1.
 
 Use the [GCC](https://gcc.gnu.org/) toolchain on a Linux platform or the [Clang](https://clang.llvm.org/) toolchain for cross-platform capability.
+
+## Steps
+
