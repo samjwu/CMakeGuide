@@ -2,7 +2,7 @@
 
 *Guide to getting started with CMake*
 
-This guide starts from an example C++ project, then progresses to building projects with CMake.
+This guide starts from an example C++ project, then progresses to building projects with [CMake](https://cmake.org/).
 
 This README covers the concepts being used. For instructions on how to actually build the project, navigate to the README in each stage's directory.
 
