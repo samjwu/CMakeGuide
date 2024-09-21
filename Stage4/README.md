@@ -12,5 +12,7 @@ This stage continues to use the [MinGW](https://sourceforge.net/projects/mingw/)
 
 Use the [GCC](https://gcc.gnu.org/) toolchain on a Linux platform or the [Clang](https://clang.llvm.org/) toolchain for cross-platform capability.
 
+This stage contiues to use the [CMake](https://cmake.org/download/) build system generator from Stage 3.
+
 ## Steps
 
