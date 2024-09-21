@@ -8,11 +8,11 @@ To understand what is being done here, see the [main README Stage 4 explanation]
 
 This stage continues to use [Visual Studio Code](https://code.visualstudio.com/) from Stage 0 as a text editor, though any text editor can be used, such as Notepad, Notepad++, Vim, Emacs, Atom, etc.
 
-This stage continues to use the [MinGW](https://sourceforge.net/projects/mingw/) toolchain to build the project on a Windows platform from Stage 1.
+This stage continues to use the [CMake](https://cmake.org/download/) build system generator from Stage 3.
+
+Instead of using the Windows MinGW toolchain from Stage 1, this stage uses the MinGW environment from the [MSYS2](https://www.msys2.org/) platform to build the project.
 
 Use the [GCC](https://gcc.gnu.org/) toolchain on a Linux platform or the [Clang](https://clang.llvm.org/) toolchain for cross-platform capability.
-
-This stage contiues to use the [CMake](https://cmake.org/download/) build system generator from Stage 3.
 
 ## Steps
 
