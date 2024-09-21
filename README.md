@@ -129,3 +129,15 @@ Combining the steps from the previous stages, here is an outline of the full bui
 - The build system generator CMake reads the configuration file (`CMakeLists.txt`) to automate generating build files (`Makefile` in this example).
 - The build system (Make in this example) uses the build system file (`Makefile` in this example) to automate commands needed to run the build tool.
 - The build tool (MinGW in this example) compiles and links the source code.
+
+### Stage 4 - Add Tests with GoogleTest
+
+This section describes adding tests to the project with GoogleTest. To skip the explanation and immediately start adding tests, skip to [the Stage 4 README](./Stage4/README.md).
+
+```
+cd Stage4
+```
+
+This section involves integrating [GoogleTest](https://github.com/google/googletest) into the project for adding unit tests.
+
+GoogleTest is Google's C++ mocking and testing framework.
