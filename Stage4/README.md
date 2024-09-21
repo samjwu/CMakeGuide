@@ -1,8 +1,8 @@
-# Stage 4 - Add Tests with GoogleTest
+# Stage 4 - Integrating a Third Party Library (GoogleTest) into the Project
 
 This stage involves the steps to integrate a third-party library, GoogleTest, into the project using CMake.
 
-To understand what is being done here, see the [main README Stage 4 explanation](../README.md#stage-4---add-tests-with-googletest).
+To understand what is being done here, see the [main README Stage 4 explanation](../README.md#stage-4---integrating-a-third-party-library-googletest-into-the-project).
 
 ## Prerequisites
 
