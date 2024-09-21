@@ -16,3 +16,45 @@ This stage contiues to use the [CMake](https://cmake.org/download/) build system
 
 ## Steps
 
+1. Create a directory for tests and navigate to the test directory.
+
+```
+mkdir tests
+cd tests
+```
+
+2. Create a `test_mysqrt.cpp` test file to write the tests in.
+
+```
+code test_mysqrt.cpp
+```
+
+3. Fill out `CMakeLists.txt` file with unit tests to validate the functionality of the project.
+
+Refer to the comments in the [`test_mysqrt.cpp`](./tests/test_mysqrt.cpp) file to understand what it is doing.
+
+
+4. Create a `build` directory in which to build the project and navigate to the `build` directory.
+
+```
+mkdir build
+cd build
+```
+
+5. Execute the `cmake` command to have the CMake build system generator generate a `Makefile`.
+
+```
+cmake .. -G "MinGW Makefiles"
+```
+
+6. Execute the `make` command to have the Make build system build the project using the `Makefile`.
+
+```
+mingw32-make
+```
+
+7. Execute the `make` command to have the Make build system build the test executable using the `Makefile`.
+
+```
+mingw32-make mysqrt_test
+```
