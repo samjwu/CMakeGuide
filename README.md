@@ -113,7 +113,7 @@ Key components of the `Makefile` include variables, targets, dependencies, and r
 
 ### Stage 3 - Build the Project with CMake
 
-This section describes building the project with CMake. To skip the explanation and immediately start building with CMake, skip to [the Stage 3 README](./Stage3/README.md).
+This section describes building the project with [CMake](https://cmake.org/). To skip the explanation and immediately start building with CMake, skip to [the Stage 3 README](./Stage3/README.md).
 
 ```
 cd Stage3
@@ -130,7 +130,7 @@ Combining the steps from the previous stages, here is an outline of the full bui
 - The build system (Make in this example) uses the build system file (`Makefile` in this example) to automate commands needed to run the build tool.
 - The build tool (MinGW in this example) compiles and links the source code.
 
-### Stage 4 - Add Tests with GoogleTest
+### Stage 4 - Integrating a Third Party Library (GoogleTest) into the Project
 
 This section describes adding tests to the project with [GoogleTest](https://github.com/google/googletest). To skip the explanation and immediately start adding tests, skip to [the Stage 4 README](./Stage4/README.md).
 
