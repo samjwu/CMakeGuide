@@ -92,7 +92,7 @@ The full process involved in compilation includes preprocessing, compilation, as
 
 ### Stage 2 - Build the Project with Make
 
-This section describes building the project with Make. To skip the explanation and immediately start building with Make, skip to [the Stage 2 README](./Stage2/README.md).
+This section describes building the project with [Make](https://www.gnu.org/software/make/). To skip the explanation and immediately start building with Make, skip to [the Stage 2 README](./Stage2/README.md).
 
 ```
 cd Stage2
