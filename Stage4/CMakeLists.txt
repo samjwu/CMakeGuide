@@ -6,6 +6,7 @@ project(stage4)
 
 # set the C++ standard
 # this will require the compiler to support C++ version 14 or later
+# since the GoogleTest version used also requires C++ version 14 or later
 set(CMAKE_CXX_STANDARD 14)
 
 # add directories to search path for header files
