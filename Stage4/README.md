@@ -10,7 +10,7 @@ This stage continues to use [Visual Studio Code](https://code.visualstudio.com/)
 
 This stage continues to use the [CMake](https://cmake.org/download/) build system generator from Stage 3.
 
-Instead of using the Windows MinGW toolchain from Stage 1, this stage uses the MinGW environment from the [MSYS2](https://www.msys2.org/) platform to build the project.
+Instead of using the Windows MinGW toolchain from Stage 1, this stage uses the MinGW environment from the [MSYS2](https://www.msys2.org/) platform to build the project, to better handle GoogleTest dependencies via the package manager `pacman`.
 
 Use the [GCC](https://gcc.gnu.org/) toolchain on a Linux platform or the [Clang](https://clang.llvm.org/) toolchain for cross-platform capability.
 
